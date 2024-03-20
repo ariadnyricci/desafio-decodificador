@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="/assets/logoalura.png">
+    </header>
+    <main class="painel__principal">
+        <section class="painel__esquerdo">
+            <textarea class="entrada__texto" cols="50" rows="17" >Digite seu texto</textarea>
+            
+            <div class="aviso__mensagem">
+                <img class="icone__exclamacao" src="/assets/exclamacao.png">
+                <p id="alerta__letra">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="painel__botoes">
+                <button onclick="criptografar()" class="botao__criptografar">Criptografar</button>
+                <button onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="painel__direito">
+            
+            <div class="retorno__mensagem">
+                <div class="painel__mensagem__criptografada" id='painel__mensagem__criptografada'> 
+                    <p id="mensagem__criptografada"></p>
+                </div>
+                <div class="botao__centralizar">
+                    <button id="botao__copiar" onclick="copiarTextoCriptografado()">Copiar</button>
+                </div>
+
+                <div class="painel__direito__mensagem" id="painel__direito__mensagem"> 
+                    <img class="shiba" src="/assets/shiba.png">
+                    <h3 class="painel__direito__frase">Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+    </main>   
+</body>
+</html>
